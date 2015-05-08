@@ -21,7 +21,7 @@ is.na(data)<-data == "?"
 datetime <- strptime(paste(data[,1],data[,2]),format="%d/%m/%Y %H:%M:%S")
 
 # Get/Setup PNG graphics device
-png(file="plot2.png", width=480, height=480, units="px")
+png(file="plot2.png", width=480, height=480, units="px", bg = "transparent")
 
 # Plot a line graph of datetime vs Global Active Power
 plot(datetime, data[,3], 

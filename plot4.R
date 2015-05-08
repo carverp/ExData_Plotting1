@@ -21,7 +21,7 @@ is.na(data)<-data == "?"
 date_time<-strptime(paste(data[,1],data[,2]),format="%d/%m/%Y %H:%M:%S")
 
 # Get device
- png(file="plot4.png", width=480, height=480, units="px")
+ png(file="plot4.png", width=480, height=480, units="px", bg = "transparent")
 
 # Set plotting parameters for the layout to 2 rows x 2 columns
 par(mfrow=c(2,2))

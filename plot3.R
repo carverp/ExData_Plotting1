@@ -21,7 +21,7 @@ is.na(data)<-data == "?"
 datetime <- strptime(paste(data[,1],data[,2]),format="%d/%m/%Y %H:%M:%S")
 
 # Get device
-png(file="plot3.png", width=480, height=480, units="px")
+png(file="plot3.png", width=480, height=480, units="px", bg = "transparent")
 
 # Plot a line graph
 plot(datetime, data[,7], xlab="", ylab="", type="l")
