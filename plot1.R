@@ -18,7 +18,7 @@ data<-read.csv.sql(file, header=T, sep=";",
 is.na(data)<-data == "?"
 
 # Get/Setup PNG file Graphics device
-png(file="plot1.png", width=480, height=480, units="px")
+png(file="plot1.png", width=480, height=480, units="px", bg = "transparent")
 
 # Plot a histogram of Global Active Power
 hist(data[,3], xlab="Global Active Power (kilowatts)", 
